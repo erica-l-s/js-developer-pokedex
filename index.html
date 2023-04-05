@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
     <!-- Nosso CSS -->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
 </head>
 
 <body>
@@ -30,6 +30,74 @@
             <!-- ..... Pokemons here ..... -->
         </ol>
 
+        <div id="detailPokemon">
+            <div id="top"></div>
+            <div id="img-pokemon"></div>
+            <div id="data">
+                <h4>Base stats</h4>
+                <div id="stats">
+                    <div class="stat-row">
+                        <div class="stat-desc">HP</div>
+                        <div class="stat-number">002</div>
+                        <div class="stat-bar">
+                            <div class="bar-outer">
+                                <div class="bar-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-desc">ATK</div>
+                        <div class="stat-number">45</div>
+                        <div class="stat-bar">
+                            <div class="bar-outer">
+                                <div class="bar-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-desc">DEF</div>
+                        <div class="stat-number">49</div>
+                        <div class="stat-bar">
+                            <div class="bar-outer">
+                                <div class="bar-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-desc">SATK</div>
+                        <div class="stat-number">59</div>
+                        <div class="stat-bar">
+                            <div class="bar-outer">
+                                <div class="bar-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-desc">SDEF</div>
+                        <div class="stat-number">002</div>
+                        <div class="stat-bar">
+                            <div class="bar-outer">
+                                <div class="bar-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-desc">SPD</div>
+                        <div class="stat-number">002</div>
+                        <div class="stat-bar">
+                            <div class="bar-outer">
+                                <div class="bar-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+          
+         </div>
+       
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
@@ -37,10 +105,14 @@
         </div>
     </section>
 
+    
+    
+    
+
     <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
