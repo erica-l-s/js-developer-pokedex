@@ -43,8 +43,6 @@ const displayPopup = (pokemon) =>{
     pokemon.types = types
     pokemon.type = type
  
-    const stats = pokemon.stats.map((base_stats)=>base_stats.base_stat)
-    const name_stats = pokemon.stats.map((name)=>name.stat.name)
     const photo = pokemon.sprites.other.dream_world.front_default
     const htmlString = `
    
@@ -57,31 +55,29 @@ const displayPopup = (pokemon) =>{
 
             <div class="detail">
                 <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    ${pokemon.types.map((type) =>`<li class="type ${type}">${type}</li>`).join('')}
                 </ol>
             </div>
                  <img id="img-pokemon" src="${photo}"alt="${pokemon.name}">
                 
                  <div id="data">
                  <h4>Base Stats</h4>
+                 <div id="hability">
+                 <div class="stat-desc">
+                  ${pokemon.stats.map((name_stats) =>`<p class="${type}">${name_stats.stat.name}</p>`).join('')}
+                 </div>
+                 <div class="bar-inner"> ${pokemon.stats.map((base_stats) =>`<p class="${type}">${base_stats.base_stat}</p>`).join('')}</div>
+                 </div>
                  <div id="stats">
-                         
-                         <div class="stat-desc">${name_stats}</div>
-                         <div class="bar-inner">${stats}</div>
-                         
-                         <p>Height: ${pokemon.height}</p>
-                         <p>Weight: ${pokemon.weight}</p>
-                         <div class="stat-bar">
-                     
-                         
-                     </div>
+                     <div class="stat-bar">
+                         <p>Height: ${(pokemon.height/10).toFixed(2)}m</p>
+                         <p>Weight: ${(pokemon.weight/10)}kg</p>
+                       </div>
                 </div>
              </div>
            </div>
         </div>
-        
-      
-          </li>
+     </li>
           
             
              
