@@ -8,4 +8,4 @@
  - CSS e 
  - Javascript Vanilla
  
- link para visualização: https://spiky-leg.surge.sh/
+ link para visualização:<a href=https://spiky-leg.surge.sh/ target="_blank"> https://spiky-leg.surge.sh/</a> 
